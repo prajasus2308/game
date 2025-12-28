@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Calculator Challenge</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Calculator Challenge</h1>
+      <div class="meta">Score: <span id="score">0</span> | Rounds: <span id="rounds">0</span></div>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="label">Compute this:</div>
+        <div id="expr" class="expr">...</div>
+        <div id="feedback" class="feedback"></div>
+
+        <div class="controls">
+          <input id="answer" type="text" placeholder="Type your answer" autocomplete="off">
+          <button id="submit">Submit</button>
+          <button id="skip">Skip</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <small>Answers accept integers or floats (use dot for decimals). All evaluation is server-side.</small>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
